@@ -1,0 +1,13 @@
+
+<h1>To Do List</h1>
+<ol>
+    <li>Refatorar todas as páginas criadas para que elas fiquem mais completas</li>
+    <li>Escolha 3 ou 4 páginas para estarem no seu menu de navegação</li>
+    <li>Aplique os conceitos de layouts fluidos e tratamento de imagens em todas as páginas</li>
+    <li>Se precisar consulte os arquivos criados durante as aulas de referência</li>
+    <li>Aplique a mesma estrutura de layout HTML em todas elas, principalmente no <header> e <footer></li>
+    <li>Aplique os mesmos estilos <CSS> em todas as páginas para uniformizar o layout</li>
+    <li><strong>Desafio:</strong>Criar uma pagina de contato mais convidativa, chame seu cliente / usuário 
+    para um café</li>
+    <li>Aplique suas ideias para melhorar a apresentação do conteúdo e a experiência do Usuário</li>
+</ol>

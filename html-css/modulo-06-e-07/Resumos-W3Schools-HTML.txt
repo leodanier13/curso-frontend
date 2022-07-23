@@ -1,0 +1,73 @@
+#Introdução HTML:
+
+A <!DOCTYPE html> declaração define que este documento é um documento HTML5
+O <html> elemento é o elemento raiz de uma página HTML
+O <head> elemento contém informações meta sobre a página HTML
+O <title> elemento especifica um título para a página HTML (que é mostrado na barra de título do navegador ou na guia da página)
+O <body> elemento define o corpo do documento e é um recipiente para todos os conteúdos visíveis, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
+O <h1> elemento define um título grande
+O <p> elemento define um parágrafo
+
+#Atributos HTML:
+
+
+Todos os elementos HTML podem ter atributos
+O href atributo de <a> especifica o URL da página para a qual o link vai
+O src atributo de <img> especifica o caminho para a imagem a ser exibida
+Os atributos width fornecem informações de tamanho para imagens height<img>
+O alt atributo of <img> fornece um texto alternativo para uma imagem
+O style atributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e mais
+O lang atributo da <html> tag declara o idioma da página da Web
+O title atributo define algumas informações extras sobre um elemento
+
+#Estilos HTML:
+
+
+Use o style atributo para estilizar elementos HTML
+Use background-color para cor de fundo
+Use color para cores de texto
+Use font-family para fontes de texto
+Use font-size para tamanhos de texto
+Use text-align para alinhamento de texto
+
+#Elementos de formatação HTML:
+
+Os elementos de formatação foram projetados para exibir tipos especiais de texto:
+
+<b> Texto em negrito
+<strong> Texto importante
+<i> Texto em itálico
+<em> Texto em destaque
+<mark> Texto marcado
+<small> Texto menor
+<del> Texto excluído
+<ins> Texto inserido
+<sub> Texto subscrito
+<sup> Texto sobrescrito
+
+#Cotações HTML:
+
+<abbr> Defines an abbreviation or acronym
+<address> Defines contact information for the author/owner of a document
+<bdo> Defines the text direction
+<blockquote> Defines a section that is quoted from another source
+<cite> Defines the title of a work
+<q> Defines a short inline quotation
+
+#HTML CSS:
+
+
+Use o atributo HTML style para estilo inline
+Use o elemento HTML <style> para definir CSS interno
+Use o elemento HTML <link> para fazer referência a um arquivo CSS externo
+Use o elemento HTML <head> para armazenar os elementos <style> e <link>
+Use a propriedade CSS color para cores de texto
+Use a propriedade CSS font-family para fontes de texto
+Use a propriedade CSS font-size para tamanhos de texto
+Use a propriedade CSS border para bordas
+Use a propriedade CSS padding para espaço dentro da borda
+Use a propriedade CSS margin para espaço fora da borda
+
+
+
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<!-- RESET -->
+	<link rel="stylesheet" type="text/css" href="css/reset-meyer.css">
+
+	<!-- Estilos Personalizados -->
+	<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/layouts-fluidos.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Layouts Fluídos</h1>
+    <p>Adapta a largura da tela</p>
+
+    <section>
+        <h2>100% widht / largura</h2>
+
+        <div class="width-100">
+
+            <nav>
+                navegação
+            </nav>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut cum tempora labore numquam commodi ullam quidem nobis error corporis aperiam pariatur assumenda earum, deleniti omnis quod dolor perspiciatis harum?
+
+                <div class="fixed-width">
+                    largura fixa
+                </div>
+
+                <div class="background">
+                    Repetir imagem na horizontal
+                </div>
+
+                <div>
+
+                    <picture>
+                        <source media="(min-width: 280px)" srcset="./images/coffe.png">
+                        <source media="(max-width: 600px)" srcset="./images/coffe.png">
+                        <img src="./images/coffe.png"
+                        alt="café">
+                    </picture>
+
+                </div>
+
+                
+            </article>
+
+        </div>
+
+
+        
+    </section>
+    
+</body>
+</html>

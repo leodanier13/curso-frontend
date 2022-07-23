@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>HTML - Leonardo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- RESET -->
+	<link rel="stylesheet" type="text/css" href="./css/reset-meyer.css">
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+
+	<!-- Estilos Personalizados -->
+	<link rel="stylesheet" type="text/css" href="./html/04-tabelas.html">
+	<link rel="stylesheet" type="text/css" href="./html/05-layout.html">
+	<link rel="stylesheet" type="text/css" href="./css/stylegeral.css">
+	<link rel="stylesheet" type="text/css" href="./css/modulo-07.css">
+</head>
+<body>
+
+	<header>
+		<h2 style="color: white;">Curso EBAC</h2>
+		<p>Escola Britânica de Artes Criativas e Tecnologia</p>
+		<div><h2>Módulo 07 - CSS foundations II</h2></div>
+		<h5>Tabela para ánalise de finanças</h5>
+		<p>Executando no modo CODE Together</p>
+	</header>
+
+	<section>
+
+		<nav>
+			<h3>Projetos Criados</h3>
+			<ul class="navegacao"></ul>
+			<li><a href="02-listas-e-links.html">Listas e Links</a></li>
+			<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+			<li><a href="04-tabelas.html">Tabelas</a></li>
+			<li><a href="05-layouts.html">Layouts</a></li>
+			<li><a href="06-formularios.html">Formulários</a></li>
+		</ul>
+
+	</nav>
+
+	<article>
+
+		<div class="table-container">
+
+			<h2>Comparação de vendas ano-base 2021</h2>
+			<p align="center">Atual / Projeção</p>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Ano 2021</th>
+						<th>1º Trimestre</th>
+						<th>2º Trimestre</th>
+						<th>3º Trimestre</th>
+						<th>4º Trimestre</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>Produtos</th>
+					<th>Atual &nbsp;|&nbsp; Projeção</th>
+					<th>Atual &nbsp;|&nbsp; Projeção</th>
+					<th>Atual &nbsp;|&nbsp; Projeção</th>
+					<th>Atual &nbsp;|&nbsp; Projeção</th>
+				</tr>
+
+				<tbody>
+					<tr>
+						<td>Produtos </td>
+						<td>Produto A</td>
+						<td>Produto B</td>
+						<td>Produto C</td>
+						<td>Produto D</td>		
+					</tr>
+
+					<tr>
+						<td>Produto A</td>
+						<td>650 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 800</td>
+						<td>800 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 1.000</td>
+						<td>950 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 1.200</td>
+						<td>XX &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; XX</td>
+					</tr>
+					<tr>
+						<td>Produto B</td>
+						<td>700 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 800</td>
+						<td>900 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 1.000</td>
+						<td>1.000 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 1.200</td>
+						<td>XX &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; XX</td>
+					</tr>
+					<tr>
+						<td>Produto C</td>
+						<td>750 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 800</td>
+						<td>950 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 1.000</td>
+						<td>1.000 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 1.200</td>
+						<td>XX &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; XX</td>
+					</tr>
+
+				</tbody>
+				<tfoot>
+					<tr><td>TOTAL VENDIDOS</td>
+						<td> 2.100 &nbsp;&nbsp;  | &nbsp;&nbsp; 2.400</td>
+						<td>2.650 &nbsp;&nbsp; | &nbsp;&nbsp; 3.000</td>
+						<td>3.050 &nbsp;&nbsp; | &nbsp;&nbsp; 3.600</td>
+						<td>XX &nbsp;&nbsp; | &nbsp;&nbsp; XX</td>							
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+	</article>
+
+</section>
+
+<footer>
+	<p>Desenvolvido por Leonardo Danier, aluno no curso de Full Stack Java na <strong>EBAC</strong></p>
+</footer>
+
+</body>
+</html>
