@@ -160,11 +160,11 @@ footer small {
 }
 
 .cognito {
-    height: 350px !important;
+    height: 400px !important;
     overflow: hidden !important;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
 
     section nav,
     section article {
