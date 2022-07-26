@@ -19,7 +19,7 @@ Repositório criado para trabalhar com meus projetos de estudos com o curso de f
 
  ## Criar conta no GitHub
 
- ## Clonar o projeto 
+## Clonar o projeto 
 
  ## commits
  Informação de alteração 
