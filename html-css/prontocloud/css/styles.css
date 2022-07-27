@@ -9,25 +9,25 @@ body {
 
 .main-container {
     display: block;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {
     display: block;
     float: left;
-   /* padding: 20px; */
-    max-width: 100%;
-    width: 100%;
+    padding: 0;
     margin: 0 auto;
-    /* max-width: 1198px; */
+    max-width: 1198px;
+    width: 97%;
 }
 
 header {
     background: #fff;
     display: block;
     float: left;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
     border-bottom: 1px solid #254159;
 }
@@ -102,7 +102,7 @@ section {
     float: left;
     font-size: 1.5rem;
     /* equivalente a 15px */
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
 }
 
@@ -133,7 +133,7 @@ nav a:hover {
 
 section article {
     display: block;
-    float: left;
+    float: center;
     width: 70%;
 }
 
@@ -141,7 +141,7 @@ footer {
     background-color: #254159;
     display: block;
     float: left;
-    /* padding: 10px; */
+    padding: 20px 0;
     width: 100%;
 }
 
@@ -194,10 +194,10 @@ footer small {
 }
 
 .legenda {
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .4);
     padding: 20px;
     border-radius: 5px; 
-    margin-bottom: 2rem;  
+    margin-bottom: 5rem;
 }
 
 .legenda h5,
@@ -207,14 +207,44 @@ footer small {
 }
 
 .button-cta {
-    
+    border-radius: 25px;
     display: inline;
     background-color: darkblue;
+    text-transform: uppercase;
     color: #fff;
-    font-size: 2rem;
-    box-shadow: 2px 2px 4px black;
+    font-size: 1.8rem;
+    box-shadow: 1px 1px 4px #454545;
     padding: 10px 15px;
     width: auto;
     text-decoration: none;
     font-weight: 300;
+    float: right;
+}
+
+#saiba-mais {
+    background-color: #e7e7e7;
+    padding: 40px 0;
+}
+
+#saiba-mais p,
+#saiba-mais img {
+    display: block;
+    float: left;
+    padding: 20px;
+}
+
+dl {
+    margin: 20px 0;
+}
+
+dt {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
 }
