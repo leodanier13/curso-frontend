@@ -133,7 +133,7 @@ nav a:hover {
 
 section article {
     display: block;
-    float: center;
+    float: left;
     width: 70%;
 }
 
