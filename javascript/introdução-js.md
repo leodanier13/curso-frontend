@@ -59,5 +59,20 @@ Algoritmo
 - Manipular o DOM: elementos HTML, eventos (clique, submit), estilos CSS
 - nODE.js: framework JS para back-end / runtime em JS
 - Mongo.db: banco de dados em JS
-- React / Vue.js / Angular: frameworks JS para desenvolvimento mobile
+- React / Vue.js / Angular: frameworks JS para desenvolvimento web / mobile
 - React Native: framework JS para desenvolvimento mobile
+
+- Recebe e manipula dados
+- Tomar decisões baseados na lógica computacional
+- Loop e interações
+- Condições de saída
+
+### Executar o JS
+- Console browsers
+- Editores: Sublime, VS code
+JS Fiddle https://jsfiddle.net/
+
+### Instalação do Node.js
+- Para a gente conseguir executar scripts JS no terminal de comando, precisamos utilizar o Node.js
+- Instalação: https://nodejs.org/pt-br/download/package-manager/
+
