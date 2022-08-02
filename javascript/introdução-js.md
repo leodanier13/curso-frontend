@@ -53,3 +53,11 @@ Algoritmo
 5. Somar os 3 números recebidos e dividir por três: (entrada 1 + entrada 2 + entrada 3) / 3;
 6. Exibir o resultado: print, echo, console.log ;
 7. fim;
+
+## Funcionalidades gerais 
+- Criar algoritmos e programas para executar no navegador: client side
+- Manipular o DOM: elementos HTML, eventos (clique, submit), estilos CSS
+- nODE.js: framework JS para back-end / runtime em JS
+- Mongo.db: banco de dados em JS
+- React / Vue.js / Angular: frameworks JS para desenvolvimento mobile
+- React Native: framework JS para desenvolvimento mobile
