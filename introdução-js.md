@@ -8,7 +8,6 @@
 - Interagir com DOM (api-web)
 - Requisições dinâmicas
 - IoT (internet das Coisas): o JS está presente em tudo
-- ECMAScript
 
 ## Fundamentos JS
 - Fundamentos do JavaScript são essenciais para avançar no desenvolvimento de aplicações modernas, é a base de diversos frameworks 
