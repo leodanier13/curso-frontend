@@ -76,3 +76,12 @@ JS Fiddle https://jsfiddle.net/
 - Para a gente conseguir executar scripts JS no terminal de comando, precisamos utilizar o Node.js
 - Instalação: https://nodejs.org/pt-br/download/package-manager/
 
+## Variáveis
+São utilizadas para referenciar espaço na memória
+
+- var
+- const (fica com o valor imutável)
+- let
+- string (tipo de variável para conjunto de caracteres)
+- tipagem: número ou string
+- array
