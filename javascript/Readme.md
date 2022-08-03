@@ -113,6 +113,9 @@ a != b = false
 ## Operadores de lógica e junção lógica
 !   NÃO (NOT)
 &&  E (AND)
+||  OU (OR)
+
+O sinal de exclamação (!) é o operador NOT (não), utilizado para negar a setença que vem na sequência.
 
 
 # Code Together
