@@ -107,6 +107,14 @@ São utilizadas para referenciar espaço na memória
 === igualdade entre sentenças (valor e tipo)
 !== diferença entre sentenças (valor e tipo)
 
+a == b = true
+a != b = false
+
+## Operadores de lógica e junção lógica
+!   NÃO (NOT)
+&&  E (AND)
+
+
 # Code Together
 
 ## Lista de Exercícios
