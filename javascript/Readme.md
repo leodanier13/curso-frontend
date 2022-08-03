@@ -86,31 +86,26 @@ São utilizadas para referenciar espaço na memória
 - tipagem: número ou string
 - array
 
-## Operadores 
-- Soma +
-- Subtração -
-- Multiplicar *
-- Dividir /
-- Módulo (resto de divisão) %
-- Math: random(), round(), sqrt().
+# Operadores 
 
-* Atribuição
-a = b
-a += b
-a -= b
-a *= b
-a /= b
-a %= b
-Adiciona 1 ++
-Subtrai 1 --
+## Aritméticos: retornam o resultado de uma operação
++ somar
+- subtrair
+* multiplicar
+/ dividir
+% resto de divisão
 
-* Operadores de Comparação / Lógicos
-- Igual == ou ===
-- Diferente !=
-- Maior que >
-- Maior ou igual >=
-- Menor que <
-- menor que <=
+## Comparadores matemáticos: teste lógico, retorno booleano (true / false):
+< menor que
+> maior que
+<= menor ou igual 
+>= maior ou igual
+
+## Comparadores Lógicos: teste lógico, retorno booleano (true / false):
+==  igualdade entre sentenças (valor)
+!=  diferença entre sentenças (valor)
+=== igualdade entre sentenças (valor e tipo)
+!== diferença entre sentenças (valor e tipo)
 
 # Code Together
 
