@@ -145,3 +145,57 @@ if (cor == 'preto') {
 } else {
     meuCarro = 'azul';
 }
+
+## Switch
+
+switch (cor) {
+    case 'branco' : 
+        meuCarro = 'branco';
+        break;
+    case 'vermelho' :
+        meuCarro - 'vermelho';
+        break;
+    case 'amarelo' :
+        meuCarro = 'amarelo';
+        break;
+    default :
+        console.log('não temos a cor desejada');
+}
+
+## Media
+var nota1 = 10;
+var nota2 = 8;
+var nota3 = 9;
+var nota4 = 7;
+var media = (nota1 +nota2 + nota3 + nota4) / 4;
+if( media > 8 ) {
+    console.log('Aluno aprovado')
+} else {
+    console.log('Aluno em recuperação')
+}
+
+## Laços de Repetição 
+
+for ([expressaoInciail]; [condicao]; [incremento])
+
+// fazer a revisão do carro aos 10 km
+var km;
+var revisao = 3;
+
+for(km = 0; km < revisao; km++ ){
+    console.log("apenas " + km + "kms então pode rodar");
+}
+
+#### Cálculo de média de alunos
+
+var alunos = [
+    [6, 7, 8, 6], 
+    [8, 5, 6, 8],
+    [10, 6 8, 7]
+]
+
+for (var i = 0; i < alunos.length; i++){
+
+    aluno[i]
+    
+}
