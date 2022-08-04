@@ -136,11 +136,12 @@ Exemplo:
 var meuCarro = cor == "preto" ? "preto" : "branco";
 
 ## If 
-if (...) {
-    ...
-}
-
-## Else 
-else {
-
+if (cor == 'preto') {
+    meuCarro = 'preto';
+} else if (cor == 'vermelho'){
+    meuCarro = 'cinza';
+} else if (cor == 'amarelo'){
+    meuCarro = 'branco';
+} else {
+    meuCarro = 'azul';
 }
