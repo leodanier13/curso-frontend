@@ -8,23 +8,24 @@
 - Interagir com DOM (api-web)
 - Requisições dinâmicas
 - IoT (internet das Coisas): o JS está presente em tudo
+- ECMAScript
 
 ## Fundamentos JS
-- Fundamentos do JavaScript são essenciais para avançar no desenvolvimento de aplicações modernas, é a base de diversos frameworks 
-- Neste curso evoluímos da base para o topo
-- É melhor que começar na frente e precisar retornar a base
+- Fundamentos do JavaScript são essenciais para avançar no desenvolvimento de aplicações modernas, é a base de diversos frameworks.
+- Neste curso evoluímos da base para o topo.
+- É melhor que começar na frente e precisar retornar a base.
 
 ## Metodologia 
-- Método progressivo e integrado
-- Todo arranha céu só é erguido depois de ter uma fundação robusta e segura
-- Neste curso apresentamos conceitos de modo progressivo, seguindo uma linha lógica de evolução
-- Começa fácil e vai aumentando a complexidade
-- Além da especialização, aprendemos a integrar com diversas possibilidades
+- Método progressivo e integrado.
+- Todo arranha céu só é erguido depois de ter uma fundação robusta e segura.
+- Neste curso apresentamos conceitos de modo progressivo, seguindo uma linha lógica de evolução.
+- Começa fácil e vai aumentando a complexidade.
+- Além da especialização, aprendemos a integrar com diversas possibilidades.
 
 ## Lógica de Programação
 - computador:
--- Máquina que extrai dados
--- Processar: realizar operações nos dados de entrada
+-- Máquina que extrai dados.
+-- Processar: realizar operações nos dados de entrada.
 - Dado: é o que pode ser processado
 - Informação: resultado do processamento 
 - Processamento de dados: Entrada (dados) > Processamento > Saída (informação)
