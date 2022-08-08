@@ -1,0 +1,69 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    color: #333;
+}
+
+div {
+    margin: 40px auto;
+}
+
+
+/* circulo */
+
+#grafico-01 {
+    background-color: rgb(231, 231, 231);
+    overflow: hidden; 
+    border-radius: 50%;
+    height: auto;
+}
+
+#grafico-01 img {
+    width: 100%;
+    height: auto;
+}
+
+/* triangulo */
+#grafico-02 {
+    background: transparent;
+    border-style: solid;
+    border-width: 60px 0 60px 120px;
+    border-color: transparent transparent
+    transparent blue;
+    width: 60px;
+}
+
+#imagem-vetorial {
+    width: 100px;
+}
+
+#canvas {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+}
+
+/* Filtros */
+#grafico-01{
+    filter: grayscale(100%); /*escala de cinza */
+    max-width: 100%;
+    height: auto;
+}
+
+.filtro {
+    filter: grayscale(100%); /* escala de cinza */
+    filter: blur(5px); /* desfoque */
+    filter: brightness(200%); /* brilho (100% = normal) */
+    filter: invert(100%); /*inversão de cores */
+    filter: opacity(50%); /* opacidade */
+    filter: saturate(200%) sepia(100%) blur(5px); /* combina filtros separados por espaço */
+
+}
+
+.filtro:hover{
+    filter: grayscale(0%);
+}
