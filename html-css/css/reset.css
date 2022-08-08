@@ -21,9 +21,9 @@ time, mark, audio, video {
  padding:0;
  border:0;
  outline:0;
- font-size:100%;
- vertical-align:baseline;
- background:transparent;
+ font-size: 100%;
+ vertical-align:;
+ background: #cf040400;
 }
 body {
  line-height:1;
