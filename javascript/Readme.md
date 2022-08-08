@@ -118,12 +118,62 @@ a != b = false
 
 O sinal de exclamação (!) é o operador NOT (não), utilizado para negar a setença que vem na sequência.
 
+#### Exemplos:
 
-# Code Together
+a != b   // o valor de a é diferente de b
+x !=== y // o valor e o tipo de x são diferentes de y
+!a == b  // o valor de a não é igual ao valor de b
 
-## Lista de Exercícios
-1. Descrever um algotritmo para resolver o problema da travessia de modo "seguro":
-Um homem precisa atravessar um rio com um barco que possui capacidade apenas para carregar ele mesmo e mais um de seus três pertences, que são: um lobo, uma cabra e um maço de alfafa. Em cada viagem só poderá ir o homem e apenas um de seus pertences. A seguinte regra deverá ser respeitada: o lobo não pode ficar sozinho com a cabra e nem a cabra sozinha com o maço de alfafa. Escreva um algoritmo para fazer a travessia dos pertences que estão em uma margem do rio para a outra.
+#### As condições lógicas são convertidas em números binários:
+true é equivalente a 1
+false é equivalente a 0
 
-2. JS: Exibir média de 3 números com entradas pelo formulário HTML 
-Enviar link(s) do git ou do fiddle
+#### Operador lógico de atribuição
+
+Tem a capacidade de atribuir valor a uma variável a partir de uma condição lógica, economiza IFs
+
+Exemplo:
+
+var meuCarro = cor == "preto" ? "preto" : "branco";
+
+## If
+if (cor == "preto") {
+    meuCarro = "preto";
+} 
+## Else
+else if (cor == "vermelho"){
+    meuCarro = "cinza";
+} else if (cor == "amarelo"){
+    meuCarro = "branco";
+} else {
+    meuCarro = "azul";
+}
+
+## Switch
+
+switch (cor) {
+    case 'branco' :
+        meuCarro = 'branco';
+        break;
+    case 'vermelho' :
+        meuCarro = 'vermelho'
+        break;
+    case 'amarelo' :
+        meuCarro = 'amarelo'
+        break;
+    default :
+        console.log('não temos a cor desejada');
+}
+
+## Média
+
+    var nota1 = 10;
+    var nota2 = 8;
+    var nota3 = 9;
+    var nota4 = 7.5;
+    var media = (nota1 + nota2 + nota3 + nota4) / 4;
+    if (media > 9 ) {
+        console.log("Aluno aprovado")
+    } else {
+        console.log("Aluno em recuperação")
+    }
