@@ -177,3 +177,48 @@ switch (cor) {
     } else {
         console.log("Aluno em recuperação")
     }
+
+## Laços de repetição
+
+for ([expressaoInicial]; [condicao]; [incremento])
+
+// fazer a revisão do carro aos 10km
+var km;
+var revisao = 10;
+
+for(km = 0; km <= revisao; km++ ){
+    console.log("apenas " + km + "kms então pode rodar");
+}
+
+### Cálculo de média de alunos
+
+var alunos = [
+    [6, 7, 8, 6],
+    [8, 5, 6, 8],
+    [10, 6, 8, 7],
+    [8, 9, 8, 8]
+]
+
+var nota = 0;
+for (var i = 0; i < alunos.length; i++){
+
+    nota = 0
+    notasAluno = alunos[i]
+    console.log("Aluno: " + i);
+    console.log("Notas: " + notasAluno);
+
+    for( c = 0; c < notasAluno.length; c++ ){
+        nota += notasAluno[c];
+    }
+
+    media = nota / 4;
+
+    if(media >= 7) {
+        resultado = "aprovado";
+    } else {
+        resultado = "reprovado";
+    }
+
+    console.log("Media: " + media + " - " + resultado);
+
+}
