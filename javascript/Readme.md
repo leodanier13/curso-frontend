@@ -178,9 +178,29 @@ switch (cor) {
         console.log("Aluno em recuperação")
     }
 
-## Laços de repetição
+## Laços de repetição (loops)
 
-for ([expressaoInicial]; [condicao]; [incremento])
+for([expressaoInicial]; [condicao]; [incremento])
+
+while( [condicao] ){
+    [execucao]
+}
+
+var contador = 0;
+while( contador < 10) {
+    contador++
+}
+
+var hora = 23;
+while (hora > 0){
+    
+    console.log(hora);
+    hora--;
+}
+
+do {
+    [execucao]
+} while ([condicao])
 
 // fazer a revisão do carro aos 10km
 var km;
@@ -204,7 +224,7 @@ for (var i = 0; i < alunos.length; i++){
 
     nota = 0
     notasAluno = alunos[i]
-    console.log("Aluno: " + i);
+    console.log("Aluno: " + parseInt(i+1));
     console.log("Notas: " + notasAluno);
 
     for( c = 0; c < notasAluno.length; c++ ){
