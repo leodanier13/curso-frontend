@@ -128,6 +128,22 @@ x !=== y // o valor e o tipo de x são diferentes de y
 true é equivalente a 1
 false é equivalente a 0
 
+#### Exemplos
+8 + 6 = 14 (number) 
+“8” + “6” =  “86” (string) 
+“8.6” + 4 = “8.64” (string) 
+“8” * 4 = 32 (number) 
+“8” - 4 = 4 (number)
+“8” / 3 = 2.6666666666666665 (float) 
+5 + true = 6 (number)
+“teste” + true = “testetrue” (string) 
+“8” == 8 = true (boolean)
+“8” == 4 = false (boolean) 
+8 === “8” = false (boolean) 
+8 !== “8” = true (boolean) 
+8 < 4 = false (boolean) 
+8 > 4 = true (boolean)
+
 #### Operador lógico de atribuição
 
 Tem a capacidade de atribuir valor a uma variável a partir de uma condição lógica, economiza IFs

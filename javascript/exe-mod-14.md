@@ -3,9 +3,9 @@
 ## Resolva as operações:
 
 10 + 15 = 25 (número)
-"10" + 2 = 10.2 (string)
+'10' + 2 = '102' (string)
 "10" * 2 = 20 (número)
-"10" / 3 = 3,333333333333333 (float)
+"10" / 3 = 3,333333333333335 (float)
 "10" % 3 = 1 (número)
 10 + true = 11 (número)
 10 == "10" = true (booleano)
@@ -14,9 +14,9 @@
 10 > 12 = false (booleano)
 10 <= 10.1 = true (booleano)
 10 >= 9.99 = true (booleano)
-10 != "dez" = false (booleano)
+10 != "dez" = true (booleano)
 10 + true = 11 (número)
-"dez" + true = deztrue (string)
+"dez" + true = "deztrue" (string)
 10 + false = 10 (número)
 10 * false = 0 (número)
 true + true = 2 (número)
