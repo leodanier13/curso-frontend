@@ -10,48 +10,19 @@
 
 <body>
 
+    <div class="container">
 
+        <form id="formulario-01">
+            <input type="text" placeholder="digite um número" name="n1">
+            <input type="text" placeholder="digite um número" name="n2">
+            <input type="text" placeholder="digite um número" name="n3">
+            <input type="text" placeholder="digite um número" name="n4">
+            <button type="submit">Enviar</button>
+        </form>
 
-    <script>
+    </div>
 
-        function calculoMedia(notas) {
-
-            let soma = 0;
-            for (c = 0; c < notas.length; c++) {
-                soma += notas[c];
-            }
-
-            media = soma / notas.length;
-
-            return media;
-
-        }
-
-        let media; // escopo global
-
-        function aprovacao(notas) {
-
-            let media = calcularMedia(notas); //escopo da função
-
-            let condicao = media >= 8 ? "aprovado" : "reprovado";
-
-            return 'Média: ' + media + ' - Resultado: ' + condicao;
-
-        }
-
-        // Função Recursivas
-
-        function contagemRegressiva(numero){
-
-            console.log(numero);
-
-            contagemRegressiva(numero--); // 9
-
-        }
-
-        contagemRegressiva(10);
-
-    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
 
 </body>
 

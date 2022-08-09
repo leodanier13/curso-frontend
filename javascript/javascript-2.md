@@ -1,4 +1,4 @@
-## Funções
+## Funções Recursivas
 
 - Evitar a repetição de código
 - Realizar chamadas dinâmicas de algoritmos
