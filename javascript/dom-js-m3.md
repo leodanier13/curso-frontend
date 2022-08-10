@@ -52,15 +52,16 @@ objeto = {
 - Alterações em tempo de execução não ficam salvas no documento
 
 ### Exemplos
-Seleciona o objeto e disponibiliza (métodos / funções).callback
+Seleciona o objeto e disponibiliza (métodos / função).callback
 
-- document.getElementById (id)
-- document.getElementsByTagName ('div')
-- ParentNode.appendChild (node)
+- document.getElementById(id)
+- document.getElementsByTagName('div')
+- document.createElement('div')
+- ParentNode.appendChild(node) 
 - element.innerHTML
 - element.style
-- element.setAttribute()
-- element.getAttribute()
+- element.setAttribute('name').value
+- element.getAttribute('name')
 - element.addEventListener()
 - window.location
 - window.onload (en-US)
