@@ -1,0 +1,138 @@
+		* {
+			box-sizing: border-box;
+		}
+
+		html {
+			margin: 0;
+			padding: 0;
+			font-family: serif;
+			font-size: 70%;
+		}
+
+		body {
+			background-color: #333;
+		}
+
+		h1, h2, p, li {
+			font-family: arial, sans-serif;
+			color: #55f;
+		}
+
+		a {
+			color: #336;
+			text-decoration: none;
+		}
+
+		#primeiro-link a {
+			color: #933;
+		}
+
+		ul {
+			background-color: #3300A3;
+			font-size: 20px;
+		}
+
+		ul li {
+			font-size: 0.8rem;
+			font-size: 1.6rem;
+			width: 80%;
+			height: 3rem;
+		}
+
+		p {
+			font-size: 2rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+			height: 3rem;
+		}
+
+		.navegacao {
+			background-color: #A39B30;
+		}
+
+		.navegacao a {
+			color: #393;
+		}
+
+		div {
+			background: #A39B30;
+			border: 0;
+			border-bottom: 1px solid #3300A3;
+			border-left: 1px solid #3300A3;
+			border-right: 1px solid #3300A3;
+			margin: 1rem 2rem;
+			padding: 2rem;
+		}
+
+		label{
+			margin-bottom: 1rem;
+			font-size: 1.4rem;
+			font-family: sans-serif;
+			font-weight: bold;
+			color: #3300A3;
+		}
+
+		input {
+			padding: 1.4rem;
+		}	
+
+		[type='text'], [type='email'], [type='date'], label {
+			width: 100%;
+			display: block;
+		}
+
+		header {
+			background-color: #0052A3;
+			padding: 30px;
+			text-align: center;
+			font-size: 30px;
+			color: whitesmoke;
+		}
+
+		nav {
+			float: left;
+			width: 30%;
+			background: #0078F0;
+			padding: 20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		article {
+			float: left;
+			padding: 20px;
+			width: 70%;
+			background-color: ##A0C4F0;
+		}
+
+		section::after {
+			background: #ccc;
+			content:"";
+			display: table;
+			clear: both;
+		}
+
+		footer {
+			background-color: #068584;
+			padding: 10px;
+			text-align: center;
+			color: whitesmoke;
+		}
+
+		@media (max-width: 600px) {
+			nav, article{
+				width: 100%;
+				height: auto;
+			}
+			
+		}
+
+
+
+
+	}

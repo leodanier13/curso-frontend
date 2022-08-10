@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -46,5 +56,47 @@ ul{
     text-decoration: none;
     font-size: 50px; 
 }
+/* Mobile first */
+
+
+/* Tablet */
+
+@media(min-width: 769px) {
+    body{
+      background-color: burlywood;
+      color: #eee;
+    }
+    p, h3, li, a {
+      color: bisque;
+    }
+    }
+    
+    @media (max-width: 768px){
+      nav{
+        width: 30vw;
+      }
+    
+      article{
+        width: 70vw;
+      }
+    
+      .coluna{
+        width: 50vw;
+        min-width: unset;
+      }
+    }
+    
+    /* Smartphone */
+    
+    @media (max-width: 425px){
+      nav,
+      article,
+      .coluna{
+        width: 100%;
+        min-width: 320px;
+      }
+    }
+    
+    
 
 

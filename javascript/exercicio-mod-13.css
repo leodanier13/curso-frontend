@@ -1,0 +1,15 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+
+input, button {
+    display: block;
+    margin: 10px;
+}
+
