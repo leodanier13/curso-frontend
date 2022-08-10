@@ -32,3 +32,17 @@ true + true = 2 (número)
 "5" * 2 > 9 = true (booleano)
 (10 + 10) * 2 = 40 (número)
 10 + 10 * 2 = 30 (número)
+
+#### 2. Responda as perguntas de acordo com as variáveis.
+
+A) R: false, var branco e "preto"
+
+B) R: false, var branco é "preto" e var cinza é "branco"
+
+C) R: true, carro e branco tem as mesmas variaveis em valores e tipagem.
+
+D) R: cinza, a variavel preto e cinza.
+
+E) R: Se var valor = 30000 e var prestacao = 750 e var entrada = 3000 a quantidade de prestações há se pagar é 36 prestações.
+
+D) R: var cores = preto cinza branco preto. formando a quantidade de 24 caracteres.
