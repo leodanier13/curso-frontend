@@ -38,21 +38,23 @@ function contagemRegressiva(numero) {
 
 // contagemRegressiva(10);
 
-document.addEventListener('submit', function (evento) {
+/* Formulário para envio de dados */
+document.getElementById('formulario-01').addEventListener('submit', function (evento) {
 
     evento.preventDefault();
     evento.stopPropagation();
 
-    let formulario = document.getElementById('formulario-01');
-
-    let dados = new FormData(formulario);
-
-    let objeto = {};
+    let dados = new FormData(this);
 
     let notas = [];
 
     for (let key of dados.keys()) {
-        objeto[key] = dados.get(key);
+
+        let numero = parseFloat(dados.get(key)); // é um número
+
+        if(typeof numero == "number") {
+            notas.push(numero);
+        }
 
         // adiciona itens no array
         notas.push( parseInt(dados.get(key)));

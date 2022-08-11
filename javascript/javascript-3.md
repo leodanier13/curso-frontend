@@ -67,3 +67,18 @@ Seleciona o objeto e disponibiliza (métodos / função).callback
 - window.onload (en-US)
 - console.log()
 - window.scrollTo()
+
+## Seletores
+- Tipos de seletores: Tag, ID, Class, Name, Query
+- Callback
+- getElementById()
+- getElementsByTagName()
+- getElementsByName()
+- getElementsByClassName()
+
+## Formulários
+- Precisamos evitar que o usuário passe dados incorretos
+- Ou seja, para direcionar melhor o uso do nosso sistema
+- Proteger a injeção de código malicioso
+- Evitar erros de processamento
+- Regex (expressões regulares)
