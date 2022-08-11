@@ -32,13 +32,16 @@ function contagemRegressiva(numero) {
     let proximoNumero = numero - 1;
 
     if (proximoNumero > 0)
-        contagemRegressiva(proximoNumero--); // 9
+        contagemRegressiva(proximoNumero); // 9
 
 }
 
 // contagemRegressiva(10);
 
-/* Formulário para envio de dados */
+/* 
+- Formulário para envio de dados
+ */
+
 document.getElementById('formulario-01').addEventListener('submit', function (evento) {
 
     evento.preventDefault();
@@ -50,14 +53,11 @@ document.getElementById('formulario-01').addEventListener('submit', function (ev
 
     for (let key of dados.keys()) {
 
-        let numero = Number(dados.get(key)); // é um número
+        let numero = dados.get(key).match(/\d/) ? Number(dados.get(key)) : 0; // é um número
 
         if (!isNaN(numero)) {
             notas.push(numero);
         }
-
-        // adiciona itens no array
-        notas.push(parseInt(dados.get(key)));
 
     }
 
@@ -68,3 +68,35 @@ document.getElementById('formulario-01').addEventListener('submit', function (ev
     document.getElementById('resultado').innerHTML = texto;
 
 });
+
+
+let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
+
+for(let emFoco of camposObrigatorios) {
+    validaCampo(emFoco)
+}
+
+
+function validaCampo(elemento) {
+
+    elemento.addEventListener('focusout', function (event) {
+
+
+        event.preventDefault();
+
+        if (this.value == '') {
+            document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campos em vermelho';
+            this.classList.add('erro')
+            return false;
+        } else {
+            document.querySelector('.mensagem').innerHTML = '';
+            this.classList.remove('erro')
+        }
+
+    });
+
+}
+
+
+
+
