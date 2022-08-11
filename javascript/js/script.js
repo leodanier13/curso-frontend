@@ -50,20 +50,18 @@ document.getElementById('formulario-01').addEventListener('submit', function (ev
 
     for (let key of dados.keys()) {
 
-        let numero = parseFloat(dados.get(key)); // é um número
+        let numero = Number(dados.get(key)); // é um número
 
-        if(typeof numero == "number") {
+        if (!isNaN(numero)) {
             notas.push(numero);
         }
 
         // adiciona itens no array
-        notas.push( parseInt(dados.get(key)));
+        notas.push(parseInt(dados.get(key)));
 
     }
 
     console.log(notas);
-
-    console.log(objeto);
 
     texto = aprovacao(notas)
 
