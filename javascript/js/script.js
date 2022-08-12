@@ -24,7 +24,6 @@ function aprovacao(notas) {
 }
 
 // Função Recursivas
-
 function contagemRegressiva(numero) {
 
     console.log(numero);
@@ -35,7 +34,6 @@ function contagemRegressiva(numero) {
         contagemRegressiva(proximoNumero); // 9
 
 }
-
 // contagemRegressiva(10);
 
 /* 
@@ -47,13 +45,17 @@ document.getElementById('formulario-01').addEventListener('submit', function (ev
     evento.preventDefault();
     evento.stopPropagation();
 
+    if(this.getAttribute("class").match(/erro/)) {
+        return false;
+    }
+
     let dados = new FormData(this);
 
     let notas = [];
 
     for (let key of dados.keys()) {
 
-        let numero = dados.get(key).match(/\d/) ? Number(dados.get(key)) : 0; // é um número
+        let numero = dados.get(key).match(/\d*/) ? Number(dados.get(key)) : 0; // é um número
 
         if (!isNaN(numero)) {
             notas.push(numero);
@@ -69,14 +71,6 @@ document.getElementById('formulario-01').addEventListener('submit', function (ev
 
 });
 
-
-let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
-
-for(let emFoco of camposObrigatorios) {
-    validaCampo(emFoco)
-}
-
-
 function validaCampo(elemento) {
 
     elemento.addEventListener('focusout', function (event) {
@@ -86,11 +80,33 @@ function validaCampo(elemento) {
 
         if (this.value == '') {
             document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campos em vermelho';
-            this.classList.add('erro')
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
             return false;
         } else {
             document.querySelector('.mensagem').innerHTML = '';
-            this.classList.remove('erro')
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        }
+
+    });
+
+}
+
+function validaCampoNumerico(elemento) {
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        if(this.value != '' && this.value.match(/[0-9]*/) && this.value >= 0 && this.value <= 10) {
+           document.querySelector('.mensagem').innerHTML = '';
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campos em destaque';
+            this.classList.add('erro');
+            return false;
         }
 
     });
@@ -99,4 +115,13 @@ function validaCampo(elemento) {
 
 
 
+let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
+let camposNumericos = document.querySelectorAll('input.numero');
 
+for(let emFoco of camposObrigatorios) {
+    validaCampo(emFoco);
+}
+
+for(let emFoco of camposNumericos) {
+    validaCampoNumerico(emFoco);
+}
