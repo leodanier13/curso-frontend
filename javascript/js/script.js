@@ -24,7 +24,6 @@ function aprovacao(notas) {
 }
 
 // Função Recursivas
-
 function contagemRegressiva(numero) {
 
     console.log(numero);
@@ -35,7 +34,6 @@ function contagemRegressiva(numero) {
         contagemRegressiva(proximoNumero); // 9
 
 }
-
 // contagemRegressiva(10);
 
 /* 
@@ -53,7 +51,7 @@ document.getElementById('formulario-01').addEventListener('submit', function (ev
 
     for (let key of dados.keys()) {
 
-        let numero = dados.get(key).match(/\d/) ? Number(dados.get(key)) : 0; // é um número
+        let numero = dados.get(key).match(/\d*/) ? Number(dados.get(key)) : 0; // é um número
 
         if (!isNaN(numero)) {
             notas.push(numero);
@@ -69,13 +67,9 @@ document.getElementById('formulario-01').addEventListener('submit', function (ev
 
 });
 
-
-let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
-
 for(let emFoco of camposObrigatorios) {
     validaCampo(emFoco)
 }
-
 
 function validaCampo(elemento) {
 
@@ -97,6 +91,29 @@ function validaCampo(elemento) {
 
 }
 
+function validaCampoNumerico(elemento) {
+
+    elemento.addEventListener('focusout', function (event) {
 
 
+        event.preventDefault();
 
+        if (this.value.match(/\d*/)) {
+            document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campos em vermelho';
+            this.classList.add('erro')
+            return false;
+        } else {
+            document.querySelector('.mensagem').innerHTML = '';
+            this.classList.remove('erro')
+        }
+
+    });
+
+}
+
+let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
+let camposNumericos = document.querySelectorAll('input.numero');
+
+for(let emFoco of camposObrigatorios) {
+    validaCampo(emFoco);
+}
