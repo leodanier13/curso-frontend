@@ -45,6 +45,10 @@ document.getElementById('formulario-01').addEventListener('submit', function (ev
     evento.preventDefault();
     evento.stopPropagation();
 
+    if(this.getAttribute("class").match(/erro/)) {
+        return false;
+    }
+
     let dados = new FormData(this);
 
     let notas = [];
@@ -67,10 +71,6 @@ document.getElementById('formulario-01').addEventListener('submit', function (ev
 
 });
 
-for(let emFoco of camposObrigatorios) {
-    validaCampo(emFoco)
-}
-
 function validaCampo(elemento) {
 
     elemento.addEventListener('focusout', function (event) {
@@ -80,11 +80,13 @@ function validaCampo(elemento) {
 
         if (this.value == '') {
             document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campos em vermelho';
-            this.classList.add('erro')
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
             return false;
         } else {
             document.querySelector('.mensagem').innerHTML = '';
-            this.classList.remove('erro')
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
         }
 
     });
@@ -93,27 +95,33 @@ function validaCampo(elemento) {
 
 function validaCampoNumerico(elemento) {
 
-    elemento.addEventListener('focusout', function (event) {
-
+    elemento.addEventListener('focusout', function(event) {
 
         event.preventDefault();
 
-        if (this.value.match(/\d*/)) {
-            document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campos em vermelho';
-            this.classList.add('erro')
-            return false;
+        if(this.value != '' && this.value.match(/[0-9]*/) && this.value >= 0 && this.value <= 10) {
+           document.querySelector('.mensagem').innerHTML = '';
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = '';
-            this.classList.remove('erro')
+            document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campos em destaque';
+            this.classList.add('erro');
+            return false;
         }
 
     });
 
 }
 
+
+
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
 let camposNumericos = document.querySelectorAll('input.numero');
 
 for(let emFoco of camposObrigatorios) {
     validaCampo(emFoco);
+}
+
+for(let emFoco of camposNumericos) {
+    validaCampoNumerico(emFoco);
 }

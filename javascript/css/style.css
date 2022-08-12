@@ -30,6 +30,10 @@ h2 {
  margin-top: 0.5rem;
 }
 
+p {
+    font-size: small;
+}
+
 input, button {
     display: block;
     margin-bottom: 20px;
