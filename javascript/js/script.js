@@ -37,10 +37,13 @@ function contagemRegressiva(numero) {
 // contagemRegressiva(10);
 
 /* 
-- Formulário para envio de dados
+- Formulário para envio de dados para cálculo da média
  */
 
-document.getElementById('formulario-01').addEventListener('submit', function (evento) {
+const formulario1 = document.getElementById('formulario-01');
+
+if(formulario1)
+formulario1.addEventListener('submit', function (evento) {
 
     evento.preventDefault();
     evento.stopPropagation();
@@ -99,7 +102,9 @@ function validaCampoNumerico(elemento) {
 
         event.preventDefault();
 
-        if(this.value != '' && this.value.match(/[0-9]*/) && this.value >= 0 && this.value <= 10) {
+        let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, '') : this.value;
+
+        if(numero != '' && numero.match(/[0-9]*/) && numero >= 0 && numero <= 10) {
            document.querySelector('.mensagem').innerHTML = '';
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
@@ -108,15 +113,32 @@ function validaCampoNumerico(elemento) {
             this.classList.add('erro');
             return false;
         }
-
     });
-
 }
 
 
+function validaEmail(elemento) {
+    elemento.addEventListener('focusout', function(event){
 
-let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
-let camposNumericos = document.querySelectorAll('input.numero');
+        event.preventDefault();
+
+        if(this.value.match(/@/) && this.value.match(/./)){
+            document.querySelector('mensagem').innerHTML = "";
+            this.classList.remove("erro");
+            this.parentNode.classList.remove("erro");
+        } else {
+            document.querySelector("mensagem").innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add("erro");
+            this.parentNode.classList.add("erro");
+            return false;
+        }
+    });
+}
+
+
+let camposObrigatorios = document.querySelectorAll("input.obrigatorio");
+let camposNumericos = document.querySelectorAll("input.numero");
+let camposEmail = document.querySelectorAll("input.email");
 
 for(let emFoco of camposObrigatorios) {
     validaCampo(emFoco);
@@ -124,4 +146,8 @@ for(let emFoco of camposObrigatorios) {
 
 for(let emFoco of camposNumericos) {
     validaCampoNumerico(emFoco);
+}
+
+for(let emFoco of camposEmail) {
+    validaCampoEmail(emFoco);
 }
