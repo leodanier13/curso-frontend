@@ -96,6 +96,7 @@ function validaCampo(elemento) {
 
 }
 
+/* Validação de cep */
 function validaCampoNumerico(elemento) {
 
     elemento.addEventListener('focusout', function(event) {
@@ -116,8 +117,8 @@ function validaCampoNumerico(elemento) {
     });
 }
 
-
-function validaEmail(elemento) {
+/* Validação do campo email */
+function validaCampoEmail(elemento) {
     elemento.addEventListener('focusout', function(event){
 
         event.preventDefault();
@@ -133,6 +134,14 @@ function validaEmail(elemento) {
             return false;
         }
     });
+}
+
+/* Validação Uf */
+function validaCampoUf(elemento) {
+    elemento.addEventListener('focusout', function(event) {
+        document
+    })
+
 }
 
 
