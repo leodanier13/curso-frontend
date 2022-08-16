@@ -42,40 +42,39 @@ function contagemRegressiva(numero) {
 
 const formulario1 = document.getElementById('formulario-01');
 
-if(formulario1)
-formulario1.addEventListener('submit', function (evento) {
+if (formulario1)
+    formulario1.addEventListener('submit', function (evento) {
 
-    evento.preventDefault();
-    evento.stopPropagation();
+        evento.preventDefault();
+        evento.stopPropagation();
 
-    if(this.getAttribute("class").match(/erro/)) {
-        return false;
-    }
-
-    let dados = new FormData(this);
-
-    let notas = [];
-
-    for (let key of dados.keys()) {
-
-        let numero = dados.get(key).match(/\d*/) ? Number(dados.get(key)) : 0; // é um número
-
-        if (!isNaN(numero)) {
-            notas.push(numero);
+        if (this.getAttribute("class").match(/erro/)) {
+            return false;
         }
 
-    }
+        let dados = new FormData(this);
 
-    console.log(notas);
+        let notas = [];
 
-    texto = aprovacao(notas)
+        for (let key of dados.keys()) {
 
-    document.getElementById('resultado').innerHTML = texto;
+            let numero = dados.get(key).match(/\d*/) ? Number(dados.get(key)) : 0; // é um número
 
-});
+            if (!isNaN(numero)) {
+                notas.push(numero);
+            }
+
+        }
+
+        console.log(notas);
+
+        texto = aprovacao(notas)
+
+        document.getElementById('resultado').innerHTML = texto;
+
+    });
 
 function validaCampo(elemento) {
-
     elemento.addEventListener('focusout', function (event) {
 
 
@@ -97,16 +96,15 @@ function validaCampo(elemento) {
 }
 
 /* Validação de cep */
-function validaCampoNumerico(elemento) {
-
-    elemento.addEventListener('focusout', function(event) {
+function validaCep(elemento) {
+    elemento.addEventListener('focusout', function (event) {
 
         event.preventDefault();
 
-        let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, '') : this.value;
+        let cep = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, '') : this.value;
 
-        if(numero != '' && numero.match(/[0-9]*/) && numero >= 0 && numero <= 10) {
-           document.querySelector('.mensagem').innerHTML = '';
+        if (cep != '' && cep.match(/[0-9]*/) && cep >= 0 && cep <= 10) {
+            document.querySelector('.mensagem').innerHTML = '';
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
@@ -119,11 +117,11 @@ function validaCampoNumerico(elemento) {
 
 /* Validação do campo email */
 function validaCampoEmail(elemento) {
-    elemento.addEventListener('focusout', function(event){
+    elemento.addEventListener('focusout', function (event) {
 
         event.preventDefault();
 
-        if(this.value.match(/@/) && this.value.match(/./)){
+        if (this.value.match(/@/) && this.value.match(/./)) {
             document.querySelector('mensagem').innerHTML = "";
             this.classList.remove("erro");
             this.parentNode.classList.remove("erro");
@@ -136,27 +134,50 @@ function validaCampoEmail(elemento) {
     });
 }
 
-/* Validação Uf */
-function validaCampoUf(elemento) {
-    elemento.addEventListener('focusout', function(event) {
-        document
-    })
+/* Validação Campo Uf */
+function validaUf(elemento) {
+    elemento.addEventListener('focusout', function (event) {
 
+        event.preventDefault();
+
+        let Uf = this.value
+
+        if (Uf !== "" && Uf.match(/\D{2}/gi)) {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimentodos campos em vermelho";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        }
+    });
 }
 
 
 let camposObrigatorios = document.querySelectorAll("input.obrigatorio");
 let camposNumericos = document.querySelectorAll("input.numero");
 let camposEmail = document.querySelectorAll("input.email");
+let campoCep = document.querySelectorAll("input.numerico");
+let campoUf = document.querySelectorAll("input.Uf");
 
-for(let emFoco of camposObrigatorios) {
+for (let emFoco of camposObrigatorios) {
     validaCampo(emFoco);
 }
 
-for(let emFoco of camposNumericos) {
+for (let emFoco of camposNumericos) {
     validaCampoNumerico(emFoco);
 }
 
-for(let emFoco of camposEmail) {
+for (let emFoco of camposEmail) {
     validaCampoEmail(emFoco);
+}
+
+for (let emFoco of campoCep) {
+    validaCep(emFoco);
+}
+
+for (let emFoco of campoUf) {
+    validaUf(emFoco);
 }
