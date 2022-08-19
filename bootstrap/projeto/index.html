@@ -4,49 +4,125 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap</title>
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>DRª Emanuelle</title>
 </head>
-
 <body>
 
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Coluna 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga magni reiciendis similique aliquam quo.
-                    Quasi animi optio quia minus! Dolorem obcaecati cupiditate suscipit odit illo qui cum, alias
-                    laudantium. Corporis.</p>
-                <a class="btn btn-lg btn-success">Botão</a>
-            </div>
-            <div class="col">
-                <h2>Coluna 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet nesciunt saepe, odit ea
-                    aliquam eos hic dolorum officiis eius unde nihil. Necessitatibus nesciunt officiis vitae dolorem,
-                    explicabo aliquid odit!</p>
-                <a class="btn btn-lg btn-danger">Botão</a>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#veja">Veja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="container">
-        <div class="row">
-            <!-- Unidade - Largura da área dividido por 12 -->
-            <div class="col-5">Linha 1 - Coluna 1</div>
-            <div class="col-7">Linha 1 - Coluna 2</div>
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre mim</h2>
+                    <p>Olá! Eu sou a dentista Dra. Emanuelle, cirurgiã dentista CRO-XXXX, e gostaria de agradecer pela
+                        visita e interesse em nosso site. Para saber mais sobre mim, nossa clínica e nossos dentistas,
+                        clique no botão abaixo.</p>
+                    <a class="btn btn-lg btn-success">Botão</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./images/índice.jpg" alt="imagem exemplo" class="img-fluid">
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col">Linha 2 - Coluna 1</div>
-        </div>
-        <div class="row">
-            <div class="col">Linha 3 - Coluna 1</div>
-            <div class="col">Linha 3 - Coluna 2</div>
-            <div class="col">Linha 3 - Coluna 3</div>
-        </div>
-    </div>
+    </section>
 
+    <section id="veja">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Veja abaixo alguns sinais e motivos para procurar seu dentista a cada 6 meses.</h2>
+
+                    <div class="card">
+                        <img src="./images/pexels-andrea-piacquadio-3779711.jpg" alt="dente" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Mas por que ir ao dentista?</h5>
+                            <p class="card-text">Prevenção de doenças bucais, doenças cardíacas, câncer bucal, Manter a
+                                saúde do corpo</p>
+                            <a class="btn btn-primary" href="#veja-mais-1">Agendar</a>
+                        </div>
+
+                        <div class="card">
+                            <img src="./images/pexels-pixabay-52527.jpg" alt="dente" class="img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Mas por que ir ao dentista?</h5>
+                                <p class="card-text">Evitar a dor de dente, Sensibilidade nos dentes, Reparar quebra de
+                                    dentes, Substituir restaurações antigas, Fugir do mau hálito </p>
+                                <a class="btn btn-primary" href="#veja-mais-2">Agendar</a>
+                            </div>
+
+                            <div class="card">
+                                <img src="./images/pexels-polina-zimmerman-4687360.jpg" alt="dente" class="img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mas por que ir ao dentista?</h5>
+                                    <p class="card-text">Colocar implantes dentários, Colocar próteses dentárias,
+                                        Corrigir mordida e mastigação, Colocar aparelhos dentários </p>
+                                    <a class="btn btn-primary" href="#veja-mais-3">Agendar</a>
+                                </div>
+
+                                <div class="card">
+                                    <img src="./images/pexels-anna-shvets-3845625.jpg" alt="dente" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mas por que ir ao dentista?</h5>
+                                        <p class="card-text">Tratar sangramentos gengivais, Tratar cáries, Tratar canal,
+                                            Clarear os dentes </p>
+                                        <a class="btn btn-primary" href="#veja-mais-4">Agendar</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Agende sua visita</h2>
+                    <p>Ficou interessado em agendar sua consulta? preencha os campos do formulario para receber nosso
+                        atendimento.</p>
+                </div>
+                <div class="col">
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                        </div>
+                        <div class="input-group">
+                            <textarea class="form-control" name="" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-sucess">Solicitar agendamento</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
