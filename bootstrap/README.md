@@ -35,3 +35,5 @@
 ## Desvantagens
 - Uso excessivo
 - Override de estilos (sobreposição)
+- Abstração de estilos
+
