@@ -1,4 +1,16 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
 section {
     padding-bottom: 4rem;
     padding-top: 4rem;
@@ -13,4 +25,45 @@ textarea {
     width: 100%;
     float: left;
     margin: 10px;
+}
+
+.nav {
+    background-color: rgba(150, 150, 150, 0.144);
+}
+
+header .menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .menu li{
+    display: inline-block;
+}
+
+header .menu a{
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+.box li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 50px; 
+}
+
+.box li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }

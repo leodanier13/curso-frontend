@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
+    <link rel="shortcut icon" href="./images/canvas.png">
     <title>DRª Emanuelle</title>
 </head>
 
@@ -14,15 +15,18 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1>Logo</h1>
-                </div>
-                <div class="col">
+                <div class="menu">
+                    <div class="col">
+                        <div class="col-md-5 col-sm-12"><br>
+                            <img src="./images/canvas1.png" alt="imagem exemplo" class="img-fluid">
+                        </div>
+                    </div>
                     <ul class="nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#veja">Veja</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item" class="ativo"><a class="btn btn-primary active" href="">Home</a></li>
+                        <li class="nav-item"><a class="btn btn-primary" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="btn btn-primary" href="#veja">Veja</a></li>
+                        <li class="nav-item"><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Contato</a></li>
+                            
                     </ul>
                 </div>
             </div>
@@ -39,9 +43,18 @@
                         Aqui você verá um pouco de nossos serviços de dentista | odontologia, bem como de nossa
                         estrutura da clínica odontológica.
                         Mantemos uma área de informações odontológicas para pacientes sempre atualizada, que você pode
-                        acessar através do Blog. Sinta-se à vontade para navegar nesse conteúdo. Para fazer um agendamento
+                        acessar através do Blog. Sinta-se à vontade para navegar nesse conteúdo. Para fazer um
+                        agendamento
                         ou caso tenha alguma dúvida, clique no botão abaixo.</p>
                     <a class="btn btn-lg btn-success">Botão</a>
+                    <div class="box"><br>
+                        <h3>Redes Sociais:</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/leonardodanier/" target="_blank"><img border="0" src="./images/Instagram-icon.png" height="40" width="40"/></a></li>
+                            <li><a href="https://www.facebook.com/leodanier/" target="_blank"><img border="0" src="./images/iconfacebook.png" height="40" width="40"></a></li>
+                            <li><a href="https://www.linkedin.com/in/leonardo-danier-34a6a8232/" target="_blank"><img border="0" src="./images/linkedin-icon.png" height="38" width="40"></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-5 col-sm-12"><br>
                     <img src="./images/índice.jpg" alt="imagem exemplo" class="img-fluid">
@@ -64,7 +77,7 @@
                             <h5 class="card-title">Mas por que ir ao dentista?</h5>
                             <p class="card-text">Prevenção de doenças bucais, doenças cardíacas, câncer bucal, Manter a
                                 saúde do corpo</p>
-                            <a class="btn btn-primary" href="#veja-mais-1">Agendar</a>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Agendar</a>
                         </div>
 
                         <div class="card">
@@ -73,7 +86,7 @@
                                 <h5 class="card-title">Mas por que ir ao dentista?</h5>
                                 <p class="card-text">Evitar a dor de dente, Sensibilidade nos dentes, Reparar quebra de
                                     dentes, Substituir restaurações antigas, Fugir do mau hálito </p>
-                                <a class="btn btn-primary" href="#veja-mais-2">Agendar</a>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Agendar</a>
                             </div>
 
                             <div class="card">
@@ -82,7 +95,8 @@
                                     <h5 class="card-title">Mas por que ir ao dentista?</h5>
                                     <p class="card-text">Colocar implantes dentários, Colocar próteses dentárias,
                                         Corrigir mordida e mastigação, Colocar aparelhos dentários </p>
-                                    <a class="btn btn-primary" href="#veja-mais-3">Agendar</a>
+                                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal-1">Agendar</a>
                                 </div>
 
                                 <div class="card">
@@ -91,7 +105,7 @@
                                         <h5 class="card-title">Mas por que ir ao dentista?</h5>
                                         <p class="card-text">Tratar sangramentos gengivais, Tratar cáries, Tratar canal,
                                             Clarear os dentes </p>
-                                        <a class="btn btn-primary" href="#veja-mais-4">Agendar</a>
+                                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1"">Agendar</a>
 
                                     </div>
                                 </div>
@@ -100,17 +114,50 @@
                     </div>
     </section>
 
-    <section id="contato">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Formulário</h2>
+    <section id=" contato">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-12">
+                                                        <h2>Newsletter</h2>
+                                                        <p>Ficou interessado em agendar sua consulta? preencha os campos
+                                                            do formulario para receber nosso atendimento.</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <form class="form">
+
+                                                            <div class="input-group">
+                                                                <input type="text" name="nome"
+                                                                    placeholder="digite seu nome completo">
+                                                            </div>
+
+                                                            <div class="input-group">
+                                                                <input type="text" name="email"
+                                                                    placeholder="digite seu melhor email">
+                                                            </div>
+
+                                                            <button type="submit" class="btn btn-lg btn-success"
+                                                                id="form">Cadastrar</button>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
                     <p>Ficou interessado em agendar sua consulta? preencha os campos do formulario para receber nosso
                         atendimento.</p>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                 </div>
-                <div class="col">
-                    <form class="form">
+                <div class="modal-body">
 
+                    <h6>Não perca tempo, agende sua consulta. </h6>
+
+
+                    <form class="form">
                         <div class="input-group">
                             <input type="text" name="nome" placeholder="digite seu nome completo">
                         </div>
@@ -123,13 +170,16 @@
                             <input type="text" name="telefone" placeholder="digite seu número de telefone">
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-sucess">Solicitar agendamento</button>
+                        <button type="submit" class="btn btn-md btn-success" id="form">Solicitar
+                            contato</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
 
