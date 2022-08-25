@@ -37,3 +37,11 @@
 - Override de estilos (sobreposição)
 - Abstração de estilos
 
+## Componentes 
+- Blocos / modelos / templates reutilizáveis
+https://getbootstrap.com/docs/5.2/components
+
+## Helpers
+- Funções básicas
+- Incrementos
+- Ajustes
