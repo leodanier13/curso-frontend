@@ -28,15 +28,17 @@ $(document).ready(function(){
     // $('.featured-item:first h4').fadeOut()
     // $('.featured-item:first h4').css('color' , '#f00')
 
-     $('.featured-item:first h4').css({
+
+    $('.featured-item:first h4').css({
+        
         'color': '#f00',
         'background': '#ff0',
         'font-weight': '100',
-     })
+    });
 
 
 
-    })
+});
 
     
 
