@@ -49,14 +49,18 @@
     
          })
          
+         // Callback
+         $('.featured-item:nth(1)').hide(2000, function(){
+            // este é o callback
+            console.log($(this).find('h4').text() + ' esgotado ')
+         })
+         .show(2000, function(){
+            console.log( $(this).find('h4').text() + ' em estoque')
+         })
          
-         
-         
-    
-    
-    
-    
-    
+         /*
+         * Animações
+         */
     
     
     })

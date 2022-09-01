@@ -72,7 +72,7 @@ a {
     text-align: center;
     width: 100%;
     position: relative;
-    padding: 25px 0px;
+    padding: 20px 0px;
 }
 .bg-dark {
     background-color: #fff !important;
@@ -82,7 +82,7 @@ a {
     z-index: 999;
     position: absolute;
     left: 50%;
-    top: 105px;
+    top: 135px;
     transform: translateX(-50%);
 }
 .navbar-dark .navbar-nav .nav-item {
