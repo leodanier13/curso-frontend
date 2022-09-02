@@ -754,3 +754,7 @@ a {
 .modal-sm {
 	--bs-modal-width: 435px;
 }
+
+.text-muted {
+	display: none;
+}

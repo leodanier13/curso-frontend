@@ -13,7 +13,7 @@
     <title>jQuery</title>
 </head>
 
-<body class="modal-open" style="overflow: hidden; padding-right: 17px;">
+<body class="modal-open" style="overflow: auto; padding-right: 17px;">
 
     <!-- Start navbar section -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -48,9 +48,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="caption">
-                        <h2>Ecommerce Html</h2>
+                        <h2>Nova coleção</h2>
                         <div class="line-dec"></div>
-                        <p> HTML Template can be converted into your desired CMS theme.</p>
+                        <p>Confira os novos itens da nossa nova coleção de Ponchos. </p>
+                        <a href="#featured" class="btn btn-primary">
+                            Conhecer
+                        </a>
                     </div>
                 </div>
             </div>
@@ -71,47 +74,60 @@
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
                         <div class="featured-item">
-                            <img src="./assets/poncho-1.jpg" alt="Item 1">
+                            <img src="./assets/poncho-1.jpg" alt="Item 1" style="width: 328px;">
                             <h4>Poncho 1</h4>
                             <h6>R$ 550,00 </h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
-                        </a>
+                        
                         <div class="featured-item">
-                            <img src="./assets/57b28ee3ab1e7c11a361f469ec54adfe.jpg" alt="Item 2">
+                            <img src="./assets/poncho-3.jpg" alt="Item 2" style="width: 350px;">
                             <h4>Poncho 2</h4>
                             <h6>R$ 340,00 </h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
-                        </a>
+                        
                         <div class="featured-item">
-                            <img src="./assets/poncho-3.jpg" alt="Item 3">
+                            <img src="./assets/poncho-4.jpg" alt="Item 3" style="width: 328px;">
                             <h4>Poncho 3</h4>
                             <h6>R$ 470,00 </h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
-                        </a>
+                        
                         <div class="featured-item">
-                            <img src="./assets/cf57374f88282c12674ecac6902233376b0be4b0.jpg" alt="Item 4">
+                            <img src="./assets/poncho-4.jpg" alt="Item 4">
                             <h4>Poncho 4</h4>
                             <h6>R$ 730,00 </h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
-                        </a>
+                        
                         <div class="featured-item">
-                            <img src="./assets/poncho1.jpg" alt="Item 5">
+                            <img src="./assets/poncho-5.jpg" alt="Item 5" style="width: 311px;">
                             <h4>Poncho 5</h4>
                             <h6>R$ 590,00 </h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
-                        </a>
+                        
                         <div class="featured-item">
-                            <img src="./assets/poncho-6.jpg" alt="Item 6">
+                            <img src="./assets/poncho-6.jpg" alt="Item 6" style="width: 380px;">
                             <h4>Poncho 6</h4>
                             <h6>R$ 510,00 </h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
-                        </a>
+                        
+                        <div class="featured-item">
+                            <img src="./assets/poncho-7.jpg" alt="Item 7" style="width: 380px;">
+                            <h4>Poncho 6</h4>
+                            <h6>R$ 510,00 </h6>
+                            <a href="single-product.html">Comprar</a>
+                        </div>
+
+                        <div class="featured-item">
+                            <img src="./assets/poncho-8.jpg" alt="Item 8" style="width: 380px;">
+                            <h4>Poncho 8</h4>
+                            <h6>R$ 510,00 </h6>
+                            <a href="single-product.html">Comprar</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,25 +136,37 @@
     <!-- End content section -->
 
     <!-- Start form section -->
-    <div class="col-md-8 offset-md-2">
-        <div class="main-content">
-            <p>Insira seus dados abaixo para receber informações atualizadas de nossos produtos</p>
-            <div class="container">
-                <form id="subscribe" class="form" action="" method="get">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <fieldset>
-                                <input name="email" type="text" class="form-control" id="email"
-                                    placeholder="Digite seu Email">
-                            </fieldset>
-                        </div>
-                        <div class="col-md-5">
-                            <fieldset>
-                                <button type="submit" id="form-submit" class="button">Inscreva-se</button>
-                            </fieldset>
+    <div class="subscribe-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1> Receba novidades </h1>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="main-content">
+                        <p>Insira seus dados abaixo para receber informações atualizadas de nossos produtos</p>
+                        <div class="container">
+                            <form id="subscribe" class="form" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <fieldset>
+                                            <input name="email" type="text" class="form-control" id="email"
+                                                placeholder="Digite seu Email">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -193,61 +221,112 @@
     </div>
     <!-- End sub footer -->
 
-    <!-- Modal Body -->
-    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
-        aria-labelledby="modalTitleId" aria-hidden="true">
+    <!-- Start modal body -->
+    <div class="modal fade" id="modelId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">Sobre nos</h5>
+                    <h5 class="modal-title" id="modalTitleId">Poncho's Store</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                   
+                    
                 </div>
-                
             </div>
         </div>
     </div>
+    <!-- End modal body -->
 
+    <!-- Start contact section -->
     <div id="contato" class="visually-hidden">
 
         <form action="post" class="form">
 
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome completo" aria-describedby="helpNome">
-                <small id="helpNome" class="text-muted">Digite um nome válido</small>  
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome completo"
+                    aria-describedby="helpNome" required>
+                <small id="helpNome" class="text-muted">Digite um nome válido</small>
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label">E-mail</label>
-                <input type="text" name="e-mail" id="email" class="form-control " placeholder="Digite seu e-mail completo" aria-describedby="helpEmail">
-                <small id="helpEmail" class="text-muted">Digite um email válido</small>  
+                <input type="text" name="e-mail" id="email" class="form-control "
+                    placeholder="Digite seu e-mail completo" aria-describedby="helpEmail" required>
+                <small id="helpEmail" class="text-muted">Digite o e-mail usado no cadastro</small>
             </div>
-            
+
+            <div class="mb-3">
+                <label for="date" class="form-label">Data</label>
+                <input type="text" name="date" id="date" class="form-control" placeholder="Digite a data" aria-describedby="helpDate">
+                <small id="helpDate" class="text-muted">
+                    Digite a data referente a compra efetuada 
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label for="time" class="form-label">Hora</label>
+                <input type="text" name="time" id="time" class="form-control" placeholder="Digite a hora" aria-describedby="helpHora">
+                <small id="helpHora" class="text-muted">
+                    Lembre-se de digitar a hora da compra
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu cep" aria-describedby="helpCEP">
+                <small id="helpCEP" class="text-muted" required>
+                    Digite um cep válido
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Celular</label>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu número de telefone" aria-describedby="helpCelular" required>
+                <small id="helpCelular" class="text-muted">
+                    Digite um celular válido
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu CPF" aria-describedby="helpCPF" required>
+                <small id="helpCPF" class="text-muted">
+                    Digite um CPF válido
+                </small>
+            </div>
+
             <button type="submit" class="btn btn-primary">Enviar</button>
 
         </form>
     </div>
 
+    <!-- End contact section -->
+
+    <!-- Start About Us -->
     <div id="sobre" class="visually-hidden">
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor nemo sed ducimus, officiis dicta nam hic perspiciatis facere, illo sit repellendus provident fugiat minima laborum et reprehenderit explicabo reiciendis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor nemo sed ducimus, officiis dicta nam hic perspiciatis facere, illo sit repellendus provident fugiat minima laborum et reprehenderit explicabo reiciendis.</p>
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Sobre nós</h5>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor nemo sed ducimus, officiis dicta
+            nam hic perspiciatis facere, illo sit repellendus provident fugiat minima laborum et reprehenderit explicabo
+            reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor nemo sed ducimus, officiis dicta
+            nam hic perspiciatis facere, illo sit repellendus provident fugiat minima laborum et reprehenderit explicabo
+            reiciendis.</p>
     </div>
+    <!-- End About Us -->
 
-
-    <!-- Optional: Place to the bottom of scripts -->
-    <script>
-        const myModal = new bootstrap.myModal(document.getElementById('modalId'), options)
-
-    </script>
-
-    <!-- Script Js linked -->
+    <!-- Bibliotecas -->
     <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./vendor/owl/js/owl.carousel.js"></script>
+    <script src="./vendor/dist/jquery.mask.min.js"></script>
+    <script src="./vendor/dist/jquery.mask.js"></script>
+    
+    <!-- Script customizados -->
     <script src="./js/custom.js"></script>
 </body>
 
