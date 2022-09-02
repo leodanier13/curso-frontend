@@ -101,7 +101,57 @@ $(document).ready(function () {
       let myModal = new bootstrap.Modal($('#modalId'))
 
       myModal.show()
+
   })
+
+
+   /*
+    * TODO: incrementando a validação
+    * - Checar se o nome é válido (mais de 2 caracteres)
+    * - Checar se o email é válido com ao menos um "@" e "."
+   */
+  function validate( elem ){
+   if( elem.val() == '') {
+
+      console.log('o campo de '+ elem.attr('name') + ' é obrigatório')
+
+      elem.addClass('invalid')
+
+      return false
+   } else {
+      elem.removeClass('invalid')
+   }
+}
+
+   $('body').on('submit', '.modal-body .form', function(e){
+
+      e.preventDefault()
+
+      const inputName = $('#nome')
+      const inputEmail = $('#email')
+
+      validate(inputName)
+      validate(inputEmail)
+
+      if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')){
+         alert('preencher os campos obrigatórios')
+         return false
+      } else {
+         $(this).submit()
+      }
+
+
+   })
+
+   $('body').on('blur', '#nome', function(){
+      validate($(this))
+
+   })
+
+   $('body').on('blur', '#email', function(){
+      validate($(this))
+
+   })
 
 })
 

@@ -746,3 +746,11 @@ a {
 #email {
 	position: relative;
 }
+
+.invalid {
+	border-color: #f00;
+}
+
+.modal-sm {
+	--bs-modal-width: 435px;
+}
