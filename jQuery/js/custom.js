@@ -66,7 +66,7 @@
    /*
    * Animações
    */
-   const duracao = 1000 // equivalenta a 1 segundo
+   const duracao = 2000 // equivalenta a 1 segundo
 
    $('.featured-item:nth(0)')
       .hide(duracao)
@@ -169,7 +169,7 @@
    $('body').on('focus', '#date', function(){
       $(this).datepicker()
    })
-
+   
    $('body').on('blur', '#date', function(){
       validate($(this))
       $(this).mask('00/00/0000');
